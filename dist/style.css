@@ -1,8 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
+
+.material-symbols-outlined {
+ font-size:68px !important;
+ text-shadow: 2px 2px #383a3b;;
+ display:flex;
+    font-variation-settings:
+  'FILL' 0,
+  'wght' 1000,
+  'GRAD' 0,
+  'opsz' 48
+}
+.title{
+    display:flex;
+    font-size:48px;
+
+}
+
 * {
     margin: 0;
     padding: 0;
+    color:aliceblue
   }
 
 html{
@@ -17,21 +35,26 @@ html{
 .header{
     display:flex;
     justify-content: center;
+    align-items: center;
+    gap:40px;
     padding:30px;
-    background-color: rgba(228, 225, 225, 0.795);
+    background-color: rgba(253, 135, 0, 0.795);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 body{
     display:flex;
     flex-direction: column;
     height:100vh;
+    background-color: #383a3b;
 }
 
 .main{
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding:40px;
+ 
+
+    height: 100%;
 }
 
 .footer{
@@ -49,4 +72,73 @@ body{
 }
 li{
     cursor: pointer; 
+}
+
+
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    max-width:1000px;
+    padding:40px;
+
+}
+.aboutContent h1, p{
+    margin:20px
+}
+
+.hoursContent h1, p{
+    display:flex;
+    margin:20px;
+
+
+}
+.hoursContent{
+    margin-top:100px;
+}
+.navRow{
+    background-color:#e3c38f;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    padding:20px;
+
+}
+li{
+    color:#383a3b;
+    font-weight: 800;
+}
+
+.title{
+    text-shadow: 2px 2px #383a3b;;
+}
+
+.menu{
+    display:flex;
+    flex-flow: wrap;
+    gap:20px;
+    justify-content:space-around;
+}
+
+.menuItem{
+    display:flex;
+    width: 400px;
+    background-color: orange;
+    flex-flow: wrap;
+    border-radius: 25px;
+    padding:10px;
+
+}
+.menuTitle{
+
+}
+.menuPrice{
+
+}
+.menuDescription{
+
+}
+
+.menuItem img{
+    width:200px;
 }

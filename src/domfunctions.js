@@ -20,12 +20,19 @@ const createP = (className,content) => {
     return p;
 }
 
+const createSpan = (className,content) => {
+    const span = document.createElement('span');
+    span.classList.add(className);
+    span.textContent = content;
+    return span;
+}
 const createUL = (className,content) => {
     const ul = document.createElement('ul');
     ul.classList.add(className);
     content.forEach(element => {
         console.log(element);
         const li = document.createElement('li');
+        li.setAttribute('id',element.replace(/\s/g, ''));
         li.textContent = element;
         ul.appendChild(li);
     });
@@ -33,8 +40,36 @@ const createUL = (className,content) => {
     return ul;
 }
 
+const createMenuItem = (title,description,price,imagePath) =>{
+    const div = document.createElement('div');
+    div.classList.add("menuItem");
+   
+    const menuTitle = document.createElement('h1');
+    menuTitle.classList.add("menuTitle");
+    menuTitle.textContent = title;
+   
+    const menuDescription = document.createElement('p');
+    menuDescription.classList.add("menuDescription");
+    menuDescription.textContent = description;
+
+    const menuPrice = document.createElement('p');
+    menuPrice.classList.add("menuPrice");
+    menuPrice.textContent = price;
+
+    const img = document.createElement("img");
+    img.src = imagePath;
+    img.classList.add("menuImg");
+    div.appendChild(img);        
+    div.appendChild(menuTitle);
+    div.appendChild(menuPrice);
+    div.appendChild(menuDescription);
+    return div;
+}
+
 
 export { createDiv };
 export { createP };
 export { createH1 };
 export { createUL };
+export { createMenuItem};
+export { createSpan};
