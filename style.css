@@ -127,9 +127,12 @@ li{
     flex-flow: wrap;
     border-radius: 25px;
     padding:10px;
+    padding-top:20px;
+    margin-top:20px;
 
 }
 .menuTitle{
+    padding:10px;
 
 }
 .menuPrice{
