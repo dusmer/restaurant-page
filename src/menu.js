@@ -8,9 +8,12 @@ const functionMenu= () => {
     const content = document.querySelector('.mainContent');
     const mainContent = createDiv("mainContent",'');
     const menuDiv = createDiv("menu","");
+    const menuHead = createH1("about","Our Menu");
     const item1 = createMenuItem("Hamburger","Made with Ham and Burger","$89.00","images/Chef-s-Kiss.jpg")
     
+    mainContent.appendChild(menuHead);
     mainContent.appendChild(menuDiv);
+ 
     menuDiv.appendChild(item1);
 
     

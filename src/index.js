@@ -64,5 +64,6 @@ menuContactUs.addEventListener('click', () => {
     functionContactUs();
 });
 main.appendChild(mainContent);
+functionHome();
 container.appendChild(footer);
 
